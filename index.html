@@ -7,15 +7,38 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/main.css">
+    <script src="https://unpkg.com/feather-icons"></script>
     <title>Tela de login</title>
 </head>
 <body>
+    <!--       Começo do header    -->
+
     <header class="header">
         <div class="header-wrapper">
             <h1>Bem-Vindo!</h1>
             <h2>Entre para ter acesso a plataforma!</h2>
         </div>
     </header>
-    
+
+    <!--       Fim do header    -->
+
+    <!--       Começo do form    -->
+
+    <form action="" class="login">
+        <div class="input-wrapper">
+            <input type="email" name="email" id="" placeholder="exemple@mail.com">
+            <i data-feather="mail" class="input-icon"></i>
+        </div>
+        <div class="input-wrapper">
+            <input type="password" name="password" id="" placeholder="***************">
+            <i data-feather="lock" class="input-icon"></i>
+        </div>
+    </form>
+
+    <!--       Fim do form    -->
+
+    <script>
+        feather.replace()
+    </script>
 </body>
 </html>

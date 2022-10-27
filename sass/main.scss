@@ -20,3 +20,60 @@
         }
     }
 }
+
+.login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3.3rem;
+    margin-top: 2.3rem;
+    padding: 0 3.2rem;
+
+    .input-wrapper {
+        position: relative;
+        width: 100%;
+
+
+        .input-icon {
+            display: block;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 32px;
+            color: #454343;
+            margin-left: 2.5rem;
+        }
+
+        input {
+            width: 100%;
+            height: 6.0rem;
+            border-radius: 3.5rem;
+            border: 1px solid #454343;
+            padding: 2.5rem;
+            display: flex;
+            align-items: center;
+            padding-left: 6rem;
+
+            color: #454343;
+            font-size: 1.5rem;
+            font-weight: 500; 
+
+            &::placeholder {
+                color: #454343;
+                font-size: 1.5rem;
+                font-weight: 500; 
+            }
+        }
+
+    }
+
+    input:focus {
+        outline-color: #DF0CE3;
+    }
+
+    input:focus ~ svg.input-icon { 
+        color: #DF0CE3;
+    }
+
+}
