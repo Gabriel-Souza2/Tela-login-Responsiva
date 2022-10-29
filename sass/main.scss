@@ -142,3 +142,97 @@
         box-shadow: 0 0 5px rgba(43, 10, 113, 0.59);
     }
 }
+
+.create-account {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: #454343;
+    font-size: 1.6rem;
+    font-weight: bold;
+
+    margin-top: 2.5rem;
+    padding:0 3.2rem;
+
+    a {
+        color:#DF0CE3;
+    }
+}
+
+.social-login {
+    margin-top: 1.5rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 1.6rem;
+
+    .wrapper-or {
+        padding: 0 7.0rem;
+        color: rgba(69,67,67, 0.56);
+        width: 100%;
+        text-align: center;
+        display: grid;
+        grid-template-columns: 1fr 60px 1fr;
+
+        .wrapper-line {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .line {
+                width: 100%;
+                height: 1px;
+                background-color: rgba(69,67,67, 0.56);
+            }
+        }
+
+    }
+}
+
+.wrapper-btn-social {
+    margin-top: 1.2rem;
+    padding: 0 3.2rem;
+    color: #fff;
+
+    width: 100%;
+
+
+    a {
+        width: 100%;
+        padding: 1rem;
+        border-radius: 35px;
+        font-weight: 500;
+
+        display: flex;
+
+        justify-content: center;
+        gap:1rem;
+        
+        div {
+            display: flex;
+
+            align-items: center;
+            gap:1rem;
+
+            width: 11.0rem;
+
+        }
+    }
+
+    .btn-social-icon {
+        display: block;
+    }
+
+    .btn-facebook {
+        background-color: #0074E9;
+        margin-bottom: 1rem;
+    }
+
+    .btn-github {
+        background-color: #000;
+    }
+}
+
