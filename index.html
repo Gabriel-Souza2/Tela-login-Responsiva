@@ -25,17 +25,29 @@
     <!--       Começo do form    -->
 
     <form action="" class="login">
-        <div class="input-wrapper">
-            <input type="email" name="email" id="" placeholder="exemple@mail.com">
-            <i data-feather="mail" class="input-icon"></i>
+        <div class="form-wrapper">
+            <div class="input-wrapper">
+                <input type="email" name="email" id="" placeholder="exemple@mail.com">
+                <i data-feather="mail" class="input-icon"></i>
+            </div>
+            <div class="input-wrapper">
+                <input type="password" name="password" id="" placeholder="***************">
+                <i data-feather="lock" class="input-icon"></i>
+            </div>
         </div>
-        <div class="input-wrapper">
-            <input type="password" name="password" id="" placeholder="***************">
-            <i data-feather="lock" class="input-icon"></i>
+        <div class="forgot">
+            <a href="">Esquece a senha?</a>
         </div>
+        <button type="submit" class="btn-login">Login</button>
     </form>
 
     <!--       Fim do form    -->
+
+    <div class="create-count">
+        <p>Você ainda não tem uma conta? <a href="">Cadastre-se aqui</a></p>
+        <p>ou</p>
+
+    </div>
 
     <script>
         feather.replace()

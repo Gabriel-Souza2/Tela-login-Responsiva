@@ -28,7 +28,9 @@ a {
   background-image: url("../assets/background.svg");
   width: 100%;
   height: 37.9rem;
+  background-size: cover; /* <------ */
   background-repeat: no-repeat;
+  background-position: center center;
 }
 .header .header-wrapper {
   padding: 5.5rem 3.2rem;
@@ -43,19 +45,21 @@ a {
 }
 
 .login {
+  margin-top: 2.3rem;
+  padding: 0 3.2rem;
+}
+.login .form-wrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 3.3rem;
-  margin-top: 2.3rem;
-  padding: 0 3.2rem;
 }
-.login .input-wrapper {
+.login .form-wrapper .input-wrapper {
   position: relative;
   width: 100%;
 }
-.login .input-wrapper .input-icon {
+.login .form-wrapper .input-wrapper .input-icon {
   display: block;
   position: absolute;
   top: 50%;
@@ -64,7 +68,7 @@ a {
   color: #454343;
   margin-left: 2.5rem;
 }
-.login .input-wrapper input {
+.login .form-wrapper .input-wrapper input {
   width: 100%;
   height: 6rem;
   border-radius: 3.5rem;
@@ -77,24 +81,72 @@ a {
   font-size: 1.5rem;
   font-weight: 500;
 }
-.login .input-wrapper input::-moz-placeholder {
+.login .form-wrapper .input-wrapper input::-moz-placeholder {
   color: #454343;
   font-size: 1.5rem;
   font-weight: 500;
 }
-.login .input-wrapper input:-ms-input-placeholder {
+.login .form-wrapper .input-wrapper input:-ms-input-placeholder {
   color: #454343;
   font-size: 1.5rem;
   font-weight: 500;
 }
-.login .input-wrapper input::placeholder {
+.login .form-wrapper .input-wrapper input::placeholder {
   color: #454343;
   font-size: 1.5rem;
   font-weight: 500;
 }
-.login input:focus {
+.login .form-wrapper input:focus {
   outline-color: #DF0CE3;
 }
-.login input:focus ~ svg.input-icon {
+.login .form-wrapper input:focus ~ svg.input-icon {
   color: #DF0CE3;
+}
+.login .forgot {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1.5rem;
+}
+.login .forgot a {
+  color: #666363;
+  font-size: 1.5rem;
+}
+
+.btn-login {
+  width: 100%;
+  height: 6.4rem;
+  border-radius: 35px;
+  border: none;
+  background-image: linear-gradient(142.78deg, #DF0CE3 0%, rgba(43, 10, 113, 0.59) 129.86%);
+  font-size: 3rem;
+  color: #fff;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-top: 2.5rem;
+  transition: background 1s linear;
+  cursor: pointer;
+}
+.btn-login::after {
+  content: "Login";
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  background-image: linear-gradient(142.78deg, rgba(43, 10, 113, 0.59) 0, #DF0CE3 129.86%);
+  opacity: 0;
+  transition: all 0.5s linear;
+  border-radius: 35px;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn-login:hover::after {
+  opacity: 1;
+  box-shadow: 0 0 5px rgba(43, 10, 113, 0.59);
 }/*# sourceMappingURL=main.css.map */
