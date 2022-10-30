@@ -11,67 +11,69 @@
     <title>Tela de login</title>
 </head>
 <body>
-    <!--       Começo do header    -->
+    <main>
+        <!--       Começo do header    -->
 
-    <header class="header">
-        <div class="header-wrapper">
-            <h1>Bem-Vindo!</h1>
-            <h2>Entre para ter acesso a plataforma!</h2>
-        </div>
-    </header>
-
-    <!--       Fim do header    -->
-
-    <!--       Começo do form    -->
-
-    <form action="" class="login">
-        <div class="form-wrapper">
-            <div class="input-wrapper">
-                <input type="email" name="email" id="" placeholder="exemple@mail.com">
-                <i data-feather="mail" class="input-icon"></i>
+        <header class="header">
+            <div class="header-wrapper">
+                <h1>Bem-Vindo!</h1>
+                <h2>Entre para ter acesso a plataforma!</h2>
             </div>
-            <div class="input-wrapper">
-                <input type="password" name="password" id="" placeholder="***************">
-                <i data-feather="lock" class="input-icon"></i>
-            </div>
-        </div>
-        <div class="forgot">
-            <a href="">Esquece a senha?</a>
-        </div>
-        <button type="submit" class="btn-login">Login</button>
-    </form>
+        </header>
 
-    <!--       Fim do form    -->
+        <!--       Fim do header    -->
 
-    <div class="create-account">
-        <p>Você ainda não tem uma conta? <a href="">Cadastre-se aqui</a></p>
-    </div>
-    <div class="social-login">
-        <div class="wrapper-or">
-            <div class="wrapper-line">
-                <span class="line"></span>
-            </div>
-            <span>ou</span>
-            <div class="wrapper-line">
-                <span class="line"></span>
-            </div>
-        </div>
-        <div class="wrapper-btn-social">
-            <a href="" class="btn-facebook">
-                <div>
-                    <i data-feather="facebook" class="icon-btn-social"></i>
-                    Facebook
+        <!--       Começo do form    -->
+
+        <form action="" class="login">
+            <div class="form-wrapper">
+                <div class="input-wrapper">
+                    <input type="email" name="email" id="" placeholder="exemple@mail.com">
+                    <i data-feather="mail" class="input-icon"></i>
                 </div>
-            </a>
-            <a href="" class="btn-github">
-                <div>
-                    <i data-feather="github" class="icon-btn-social"></i>
-                    Github
+                <div class="input-wrapper">
+                    <input type="password" name="password" id="" placeholder="***************">
+                    <i data-feather="lock" class="input-icon"></i>
                 </div>
-            </a>
-        </div>
+            </div>
+            <div class="forgot">
+                <a href="">Esquece a senha?</a>
+            </div>
+            <button type="submit" class="btn-login">Login</button>
+        </form>
 
-    </div>
+        <!--       Fim do form    -->
+
+        <div class="create-account">
+            <p>Você ainda não tem uma conta? <a href="">Cadastre-se aqui</a></p>
+        </div>
+        <div class="social-login">
+            <div class="wrapper-or">
+                <div class="wrapper-line">
+                    <span class="line"></span>
+                </div>
+                <span>ou</span>
+                <div class="wrapper-line">
+                    <span class="line"></span>
+                </div>
+            </div>
+            <div class="wrapper-btn-social">
+                <a href="" class="btn-facebook">
+                    <div>
+                        <i data-feather="facebook" class="icon-btn-social"></i>
+                        Facebook
+                    </div>
+                </a>
+                <a href="" class="btn-github">
+                    <div>
+                        <i data-feather="github" class="icon-btn-social"></i>
+                        Github
+                    </div>
+                </a>
+            </div>
+
+        </div>
+    </main>
 
     <script>
         feather.replace()

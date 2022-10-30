@@ -1,30 +1,35 @@
 @import "reset";
 
+main {
+    max-width: 600px;
+    height: 100vh;
+}
+
 .header {
     background-image: url("../assets/background.svg");
     width: 100%;
-    height: 37.9rem;
-    background-size:     cover;                      /* <------ */
-    background-repeat:   no-repeat;
-    background-position: center center;    
+    height: 150px;
+    background-size: cover;
+    background-repeat: no-repeat;
+  
 
     .header-wrapper {
-        padding: 5.5rem 3.2rem;
+        padding: 1.2rem 3.2rem;
         color: white;
 
         h1 {
-            font-size: 3.5rem;
-            margin-bottom: 6rem;
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
         }
 
         h2 {
-            font-size: 3.0rem;
+            font-size: 2.0rem;
         }
     }
 }
 
 .login {
-    margin-top: 2.3rem;
+    margin-top: 1.5rem;
     padding: 0 3.2rem;
 
     .form-wrapper {
@@ -90,19 +95,22 @@
         a {
             color: #666363;
             font-size: 1.5rem;
+
+            &:hover {
+                color: #DF0CE3;
+            }
         }
     }
 }
 
 .btn-login {
     width: 100%;
-    height: 6.4rem;
     border-radius: 35px;
     border: none;
 
     background-image: linear-gradient(142.78deg, #DF0CE3 0%, rgba(43, 10, 113, 0.59) 129.86%);
 
-    font-size: 3.0rem;
+    font-size: 2.8rem;
     color: #fff;
     font-weight: 500;
 
@@ -111,7 +119,8 @@
     align-items: center;
     position: relative;
 
-    margin-top: 2.5rem;
+    padding: 1.0rem 0;
+    margin-top: 1.5rem;
 
     transition: background 1s linear;
 
@@ -149,7 +158,7 @@
     align-items: center;
 
     color: #454343;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     font-weight: bold;
 
     margin-top: 2.5rem;
@@ -157,7 +166,11 @@
 
     a {
         color:#DF0CE3;
-    }
+
+        &:hover {
+            text-decoration: underline;
+        }
+     }
 }
 
 .social-login {
@@ -229,10 +242,51 @@
     .btn-facebook {
         background-color: #0074E9;
         margin-bottom: 1rem;
+        transition: background 0.3s linear;
+
+        &:hover {
+            background-color: #005DBB;
+        }
     }
 
     .btn-github {
-        background-color: #000;
+        background-color: #2F2F2F;
+        transition: background 0.3s linear;
+
+        &:hover {
+            background-color: #1D1D1D;
+        }
     }
 }
+
+@media (min-width: 600px) {
+
+    main {
+        margin: 0 auto;
+        background-color: #fff;
+       
+        box-shadow: 0px 10px 50px #666363;
+    }
+
+    .login .form-wrapper .input-wrapper input  {
+        height: 4.0rem;
+
+        &::placeholder {
+            font-size: 1.2rem;
+        }
+    }
+
+    .login .forgot a {
+        font-size: 1.2rem;
+    }
+
+    .btn-login {
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 2.3rem;
+        width: 60%;
+    }
+}
+
+
 
