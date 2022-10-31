@@ -10,6 +10,6 @@ Projeto para praticar responsividade.
 - Mobile First
 
 
-![Tela de Login Mobile](./img/login_mobile.jpeg)
+![Tela de Login Mobile](./img/login_mobile.png)
 
 ![Tela de Login pc](./img/login_pc.png)
